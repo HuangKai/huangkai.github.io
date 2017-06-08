@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+        <link rel="shortcut icon" type="image/png" href="./favicon.png">
+        <title>WongKay - A full-stack designer</title>
+        <!-- <link rel="stylesheet" href="https://unpkg.com/docute@3/dist/docute.css"> -->
+        <link rel="stylesheet" href="main.css">
+        <style>
+            .wechat-show {
+              visibility: visible !important;
+              opacity: 1 !important;
+              top: 50% !important;
+              margin-top: -240px !important;
+              z-index: 999;
+            }
+            .wechat-ease {
+              -webkit-transition: all .4s ease;
+              transition: all .4s ease;
+            }
+            .wechat {
+              position: absolute;
+              visibility: hidden;
+              opacity: 0;
+              left: 50%;
+              margin-left: -168px;
+              top: -100%;
+            }
+        </style>
+    </head>
+    <body onclick="hiddenWechat()">
+        <div id="app"></div>
+        <figure class="wechat " onmouseout="hiddenWechat()">
+          <img src="wechat@2x.png" width="337" height="">
+        </figure>
+        <p class="host" style="position: absolute; bottom: 10px; left: 5%;">Hosted by <a href="https://pages.coding.me" style="font-weight: bold;">Coding Pages</a></p>
+<!--         <script src="https://unpkg.com/docute@3/dist/docute.js"></script>
+        <script src="https://unpkg.com/docute-evanyou@0.4.0/dist/evanyou.min.js"></script>
+        <script src="https://unpkg.com/docute-iframe"></script> -->
+        <script src="./docute.js"></script>
+        <script src="./evanyou.min.js"></script>
+        <script src="./docute-iframe"></script>
+        <script src="./config.js"></script>
+        <script>
+            // docute.init();
+        </script>
+    </body>
+</html>
